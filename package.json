@@ -1,0 +1,21 @@
+{
+  "name": "food_project",
+  "version": "1.0.0",
+  "description": "preview for Ohmyfood",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metalfeanor/ChristopheNamoune_3_17032021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metalfeanor/ChristopheNamoune_3_17032021/issues"
+  },
+  "homepage": "https://github.com/metalfeanor/ChristopheNamoune_3_17032021#readme",
+  "browserslist": "last 4 versions"
+}
