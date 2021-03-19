@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-footer;
+  padding-left: 5%;
+  > a {
+    color: white;
+  }
+  &__logo {
+    font-family: Shrikhand;
+    color: white;
+  }
+}

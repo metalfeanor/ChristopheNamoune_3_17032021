@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
+
+/*@import "./base/typography";
+
+@import "./components/buttons";*/
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding-left: 5%;
+}
+.footer > a {
+  color: white;
+}
+.footer__logo {
+  font-family: Shrikhand;
+  color: white;
+}
+
+/*@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/form";*/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+
+/*@import "./pages/about";
+@import "./pages/project";*/
+
+/*# sourceMappingURL=style.css.map */
