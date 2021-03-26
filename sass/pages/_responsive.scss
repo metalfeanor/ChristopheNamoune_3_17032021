@@ -88,11 +88,16 @@
 /* Desktop devices (1224px and up) */
 @media screen and (min-width: 1224px) {
   .header {
+    &__searchbar {
+      & > input::placeholder {
+        padding-left: 41%;
+      }
+    }
     &__arrow {
       flex: 3;
     }
     &__card {
-      height: 20vh;
+      height: 25vh;
       &-img {
         background-position: center;
       }
@@ -120,40 +125,26 @@
     }
     &__section {
       width: 32%;
-    }
-    &__item {
-      padding: 0.5em 1.5em;
-    }
-    &__title {
-      font-size: 13px;
+      row-gap: 1.5em;
+      margin: 2em 0;
     }
     &__content {
-      font-size: 12px;
+      font-size: 14px;
     }
     &__order {
-      margin: 0.5em 0;
-    }
-    &__btn {
-      font-size: 14px;
+      margin: 1.5em 0;
     }
   }
   .content {
     padding: 2%;
-    &__heading {
-      font-size: 20px;
-    }
-    &__sentence {
-      font-size: 14px;
-    }
     &__btn {
-      font-size: 12px;
+      font-size: 16px;
     }
   }
   .explain {
     padding: 2% 5%;
     &__heading {
       margin-bottom: 0.8em;
-      font-size: 16px;
     }
     &__content {
       flex-direction: row;
@@ -167,20 +158,17 @@
       margin-top: 0;
     }
     &__line {
-      font-size: 18px;
+      font-size: 22px;
       & > i {
-        width: 60px;
+        width: 90px;
       }
       & > p {
-        font-size: 16px;
+        font-size: 17px;
       }
     }
   }
   .cardmap {
     padding: 2em 5%;
-    &__heading {
-      font-size: 16px;
-    }
     &__content {
       flex-flow: row wrap;
       justify-content: space-between;
@@ -204,15 +192,17 @@
     padding: 0.3em;
   }
   .card-info {
-    line-height: 1.5;
     & > h3 {
-      font-size: 14px;
+      font-size: 15px;
     }
     & > p {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
   .icon {
     font-size: 20px;
+  }
+  .footer {
+    padding: 1.2em 8em;
   }
 }
