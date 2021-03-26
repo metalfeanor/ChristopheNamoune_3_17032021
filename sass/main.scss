@@ -4,9 +4,9 @@
 @import "./utils/extensions";
 
 @import "./base/base";
-/*@import "./base/typography";
+/*@import "./base/typography";*/
 
-@import "./components/buttons";*/
+@import "./components/loader";
 
 @import "./layout/header";
 @import "./layout/footer";
@@ -15,5 +15,5 @@
 @import "./layout/form";*/
 
 @import "./pages/index";
-/*@import "./pages/about";
-@import "./pages/project";*/
+@import "./pages/restaurant";
+/*@import "./pages/project";*/

@@ -12,6 +12,10 @@
     <title>OhMyFood</title>
   </head>
   <body>
+    <div class=" bg-loader shutdown">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    
     <header class="header">
       <div class="header__logo">
         <img
@@ -23,7 +27,7 @@
       <div class="header__searchbar">
         <input
           type="text"
-          placeholder="&#xf3c5 Paris,Belleville"
+          placeholder="&#xf3c5 &nbsp; Paris, Belleville"
           name="search"
           class="fa fa-input"
         />
@@ -43,25 +47,89 @@
     <main class="container">
       <section class="explain">
         <h2 class="explain__heading">Fonctionnement</h2>
-        <div class="explain__content"></div>
+        <div class="explain__content">
+          <div class="explain__item">
+            <div class="explain__line">
+              <div class="number"><p>1</p></div>
+              <i class="fas fa-mobile-alt"></i>
+              <p>Choisissez un restaurant</p>
+            </div> 
+          </div>
+          <div class="explain__item">
+            <div class="explain__line">
+              <div class="number"><p>2</p></div>
+              <i class="fas fa-list-ul"></i>
+              <p>Composez votre menu</p>
+            </div>
+          </div>  
+          <div class="explain__item">
+            <div class="explain__line">
+              <div class="number"><p>3</p></div>
+              <i class="fas fa-store primary"></i>
+              <p>Dégustez au restaurant</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="cardmap">
         <h2 class="cardmap__heading">Restaurants</h2>
         <div class="cardmap__content">
-          <a href="" class="cardmap__item card1"></a>
-          <a href="" class="cardmap__item card2"></a>
-          <a href="" class="cardmap__item card3"></a>
-          <a href="" class="cardmap__item card4"></a>
+          <div class="cardmap__item">
+            <a href="palette.html" class="cardmap__image card1">
+              <div class="tag">Nouveau</div>
+            </a>
+            <div class="cardmap__item-info">
+              <div class="card-info">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+              </div>    
+              <i class="far fa-heart icon"></i>
+            </div>
+          </div>
+          <div class="cardmap__item">
+            <a href="enchantee.html" class="cardmap__image card2">
+              <div class="tag">Nouveau</div>
+            </a>
+            <div class="cardmap__item-info">
+              <div class="card-info">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+              </div>           
+              <i class="far fa-heart icon"></i>
+            </div>
+          </div>
+          <div class="cardmap__item">
+            <a href="francaise.html" class="cardmap__image card3">
+            </a>
+            <div class="cardmap__item-info">
+              <div class="card-info">
+                <h3>À la française</h3>
+                <p>Cité rouge</p>
+              </div> 
+              <i class="far fa-heart icon"></i>
+            </div>
+          </div>
+          <div class="cardmap__item">
+            <a href="delice.html" class="cardmap__image card4">
+            </a>
+            <div class="cardmap__item-info">
+              <div class="card-info">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div> 
+              <i class="far fa-heart icon"></i>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__logo">ohmyfood</div>
       <a href="" class="footer__item">
-        <i class="fas fa-utensils"></i>Proposer un restaurant
+        <i class="fas fa-utensils"></i>&nbsp; Proposer un restaurant
       </a>
       <a href="" class="footer__item">
-        <i class="fas fa-hands-helping"></i>Devenir partenaire
+        <i class="fas fa-hands-helping alticon"></i>&nbsp; Devenir partenaire
       </a>
       <a href="" class="footer__item">Mentions légales</a>
       <a href="" class="footer__item">Contact</a>

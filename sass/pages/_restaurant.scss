@@ -1,0 +1,117 @@
+.main {
+  padding: 5%;
+  background-color: $color-bg;
+}
+
+.food {
+  &__section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin-bottom: 2em;
+    & > h2 {
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      border-bottom: 3px solid $colour-tercary;
+      width: 2em;
+      padding-bottom: 0.2em;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border-radius: 1em;
+    box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    &:hover {
+      & > .food__check {
+        width: 20vw;
+        & > i {
+          animation: rotation 500ms linear;
+          width: auto;
+        }
+      }
+    }
+  }
+  &__check {
+    background-color: $colour-tercary;
+    width: 0;
+    height: 12.5vh;
+    transition: width 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > i {
+      color: white;
+      font-size: 25px;
+      width: 0;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.8em 1.5em 0.5em 1em;
+    overflow: hidden;
+    width: 100%;
+    & > h3 {
+      font-size: 16px;
+    }
+  }
+  &__title {
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 0.4em;
+  }
+  &__content {
+    font-size: 13px;
+  }
+  &__price {
+    font-weight: bold;
+    color: $color-footer;
+  }
+  &__btn {
+    @include btn;
+    padding: 1em 3em;
+    font-size: 15px;
+  }
+  &__order {
+    display: flex;
+    justify-content: center;
+    margin: 2.5em 0;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(3em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+$delay: 200ms;
+
+.time {
+  @for $i from 1 through 10 {
+    &#{$i} {
+      animation: fade 500ms $delay * $i backwards ease-in-out;
+    }
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

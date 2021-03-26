@@ -1,7 +1,138 @@
-.content {
+.cardmap {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: $color-bg;
+  padding: 0 5% 10% 5%;
+  &__heading {
+    padding-top: 10%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    padding: 5% 0;
+  }
+  &__item {
+    row-gap: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    &-info {
+      padding: 5% 10% 5% 5%;
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+    }
+  }
+  &__image {
+    height: 25vh;
+    background-position: bottom;
+    background-size: cover;
+  }
+}
+/* select img */
+.card1 {
+  background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.card2 {
+  background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-position: left 0% bottom 37%;
+}
+
+.card3 {
+  background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.card4 {
+  background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+.card-info {
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icon {
+  font-size: 25px;
+  &:hover::before {
+    color: $colour-primary;
+    font-weight: 900;
+    cursor: pointer;
+  }
+}
+
+.tag {
+  background-color: $colour-tercary;
+  color: darken($colour-tercary, 38%);
+  width: 80px;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  font-weight: bold;
+  position: relative;
+  top: 1em;
+  left: 72%;
+}
+
+.explain {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 5%;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    padding-left: 0.45em;
+  }
+  &__item {
+    width: 100%;
+    height: 70px;
+    background-color: $color-bg;
+    border-radius: 0.8em;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    &:nth-child(1) {
+      margin-top: 2em;
+    }
+    &:nth-child(3) {
+      background-color: lighten($colour-primary, 35%);
+    }
+  }
+  &__line {
+    display: flex;
+    align-items: center;
+    transform: translateX(-5%);
+    & > p {
+      font-weight: bold;
+    }
+    & > i {
+      text-align: center;
+      width: 60px;
+      color: $color-icon;
+    }
+    & .primary {
+      color: $colour-primary;
+    }
+  }
+}
+
+.number {
+  background-color: $colour-primary;
+  color: white;
+  border-radius: 2em;
+  height: 23px;
+  width: 23px;
+  display: flex;
   justify-content: center;
-  padding: 10%;
+  align-items: center;
+  & > p {
+    font-size: 0.8em;
+  }
 }
