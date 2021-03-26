@@ -20,8 +20,6 @@
   }
   &__container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     width: 100%;
     border-radius: 1em;
     box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.15);
@@ -40,7 +38,6 @@
   &__check {
     background-color: $colour-tercary;
     width: 0;
-    height: 12.5vh;
     transition: width 500ms;
     display: flex;
     align-items: center;
@@ -54,19 +51,15 @@
   &__item {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     padding: 0.8em 1.5em 0.5em 1em;
-    align-items: center;
     @include ellipsis;
     width: 100%;
-    & > h3 {
-      font-size: 16px;
-    }
   }
   &__title {
     font-weight: bold;
+    font-size: 16px;
     flex: 0 1 100%;
-    margin-bottom: 0.4em;
+    line-height: 2;
     @include ellipsis;
   }
   &__content {
