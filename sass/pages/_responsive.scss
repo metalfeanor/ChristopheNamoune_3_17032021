@@ -1,5 +1,5 @@
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header {
     &__searchbar {
       & > input::placeholder {
@@ -86,7 +86,7 @@
 }
 
 /* Desktop devices (1224px and up) */
-@media only screen and (min-width: 1224px) {
+@media screen and (min-width: 1224px) {
   .header {
     &__arrow {
       flex: 3;
