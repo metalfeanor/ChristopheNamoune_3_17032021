@@ -26,6 +26,7 @@
     border-radius: 1em;
     box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.15);
     overflow: hidden;
+    background-color: white;
     &:hover {
       & > .food__check {
         width: 20vw;
@@ -54,9 +55,9 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    background-color: white;
     padding: 0.8em 1.5em 0.5em 1em;
-    overflow: hidden;
+    align-items: center;
+    @include ellipsis;
     width: 100%;
     & > h3 {
       font-size: 16px;
@@ -64,11 +65,14 @@
   }
   &__title {
     font-weight: bold;
-    width: 100%;
+    flex: 0 1 100%;
     margin-bottom: 0.4em;
+    @include ellipsis;
   }
   &__content {
     font-size: 13px;
+    flex: 1 0 80%;
+    @include ellipsis;
   }
   &__price {
     font-weight: bold;

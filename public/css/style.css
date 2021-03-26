@@ -382,6 +382,7 @@ p {
   border-radius: 1em;
   box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  background-color: white;
 }
 .food__container:hover > .food__check {
   width: 20vw;
@@ -408,9 +409,11 @@ p {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  background-color: white;
   padding: 0.8em 1.5em 0.5em 1em;
+  align-items: center;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   width: 100%;
 }
 .food__item > h3 {
@@ -418,11 +421,18 @@ p {
 }
 .food__title {
   font-weight: bold;
-  width: 100%;
+  flex: 0 1 100%;
   margin-bottom: 0.4em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .food__content {
   font-size: 13px;
+  flex: 1 0 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .food__price {
   font-weight: bold;

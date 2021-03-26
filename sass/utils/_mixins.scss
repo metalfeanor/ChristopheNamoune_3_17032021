@@ -36,3 +36,9 @@
 @mixin gradient($color1, $color2) {
   background: linear-gradient(-10deg, $color1, $color2);
 }
+
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
