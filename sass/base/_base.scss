@@ -12,8 +12,17 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 p {
   font-size: 0.9rem;
+}
+button {
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  text-align: start;
+  border-radius: 1em;
+  overflow: hidden;
 }

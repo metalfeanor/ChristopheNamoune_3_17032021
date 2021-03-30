@@ -21,7 +21,6 @@
   &__container {
     display: flex;
     width: 100%;
-    border-radius: 1em;
     box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.15);
     overflow: hidden;
     background-color: white;
@@ -46,6 +45,7 @@
       color: white;
       font-size: 25px;
       width: 0;
+      padding: 21px 0;
     }
   }
   &__item {
