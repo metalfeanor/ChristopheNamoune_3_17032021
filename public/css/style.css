@@ -104,6 +104,11 @@ button {
   flex: 1;
   padding-left: 1em;
 }
+@media screen and (min-width: 1224px) {
+  .header__arrow {
+    flex: 3;
+  }
+}
 .header__logo {
   padding: 1em 0;
   align-self: center;
@@ -125,25 +130,62 @@ button {
   word-spacing: normal;
   padding-left: 30%;
 }
+@media screen and (min-width: 768px) {
+  .header__searchbar > input::placeholder {
+    padding-left: 37%;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .header__searchbar > input::placeholder {
+    padding-left: 41%;
+  }
+}
 .header__card {
   width: 100%;
   height: 40vh;
+}
+@media screen and (min-width: 1224px) {
+  .header__card {
+    height: 25vh;
+  }
 }
 .header__card-img {
   background-position: bottom;
   background-size: cover;
   height: 100%;
 }
+@media screen and (min-width: 1224px) {
+  .header__card-img {
+    background-position: center;
+  }
+}
 .header__info {
   color: black;
   background-color: #f6f6f6;
-  font-family: Shrikhand;
+  font-family: "Shrikhand";
   font-size: 20px;
   display: flex;
   justify-content: space-between;
   padding: 1em 2em 0.5em 1em;
   border-radius: 2em 2em 0 0;
   transform: translateY(-2.5em);
+}
+@media screen and (min-width: 768px) {
+  .header__info {
+    padding-left: 2em;
+    padding-right: 2.5em;
+    font-size: 25px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .header__info {
+    padding: 0.5em 3em;
+    width: 33%;
+    transform: translateY(-2em);
+    font-size: 20px;
+  }
 }
 
 .content {
@@ -155,14 +197,40 @@ button {
   background-color: #f6f6f6;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 5%;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .content {
+    padding: 2%;
+  }
+}
 .content__heading {
   text-align: center;
   padding-bottom: 0.5em;
   font-size: 25px;
 }
+@media screen and (min-width: 768px) {
+  .content__heading {
+    font-size: 30px;
+  }
+}
 .content__sentence {
   text-align: center;
   padding-bottom: 2em;
+}
+@media screen and (min-width: 768px) {
+  .content__sentence {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .content__sentence {
+    font-size: 23px;
+    font-weight: 100;
+  }
 }
 .content__btn {
   border: none;
@@ -196,12 +264,33 @@ button {
   transition: opacity 250ms;
   background: linear-gradient(-10deg, #a16be0, #ff93e1);
 }
+@media screen and (min-width: 768px) {
+  .content__btn {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .content__btn {
+    font-size: 16px;
+  }
+}
 
 .footer {
   display: flex;
   flex-direction: column;
   background-color: #353535;
   padding: 1.3em 1.2em;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .footer {
+    padding: 1.2em 8em;
+  }
 }
 .footer > a {
   color: white;
@@ -210,6 +299,13 @@ button {
   font-family: Shrikhand;
   color: white;
   padding-bottom: 1.2em;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    font-size: 25px;
+    flex: 0 1 100%;
+    text-align: center;
+  }
 }
 .footer__item {
   padding-bottom: 0.6em;
@@ -225,11 +321,28 @@ button {
   background-color: #f6f6f6;
   padding: 10% 5%;
 }
+@media screen and (min-width: 768px) {
+  .cardmap {
+    padding: 5%;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .cardmap {
+    padding: 2em 5%;
+  }
+}
 .cardmap__content {
   display: flex;
   flex-direction: column;
   row-gap: 1.2rem;
   padding: 5% 0;
+}
+@media screen and (min-width: 1224px) {
+  .cardmap__content {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1em 0;
+  }
 }
 .cardmap__item {
   row-gap: 5%;
@@ -240,6 +353,11 @@ button {
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+@media screen and (min-width: 1224px) {
+  .cardmap__item {
+    width: 23%;
+  }
+}
 .cardmap__item-info {
   padding: 5% 10% 5% 5%;
   width: 100%;
@@ -249,10 +367,25 @@ button {
   justify-content: space-between;
   background-color: white;
 }
+@media screen and (min-width: 768px) {
+  .cardmap__item-info {
+    padding: 2% 4%;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .cardmap__item-info {
+    padding: 3% 6%;
+  }
+}
 .cardmap__image {
   height: 25vh;
   background-position: bottom;
   background-size: cover;
+}
+@media screen and (min-width: 1224px) {
+  .cardmap__image {
+    height: 20vh;
+  }
 }
 
 /* select img */
@@ -276,9 +409,41 @@ button {
 .card-info {
   line-height: 1.5;
 }
+@media screen and (min-width: 768px) {
+  .card-info {
+    line-height: 2;
+  }
+  .card-info > h3 {
+    font-size: 20px;
+  }
+  .card-info > p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .card-info {
+    line-height: 1.6;
+  }
+  .card-info > h3 {
+    font-size: 15px;
+  }
+  .card-info > p {
+    font-size: 14px;
+  }
+}
 
 .icon {
   font-size: 25px;
+}
+@media screen and (min-width: 768px) {
+  .icon {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .icon {
+    font-size: 24px;
+  }
 }
 .icon:hover::before {
   color: #9356dc;
@@ -298,17 +463,54 @@ button {
   top: 1em;
   left: 72%;
 }
+@media screen and (min-width: 768px) {
+  .tag {
+    left: 82%;
+    font-size: 20px;
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .tag {
+    left: 75%;
+    font-size: 12px;
+    width: 57px;
+    padding: 0.3em;
+  }
+}
 
 .explain {
   display: flex;
   flex-direction: column;
   padding: 10% 5%;
 }
+@media screen and (min-width: 768px) {
+  .explain {
+    padding: 5%;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .explain {
+    padding: 2% 5%;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .explain__heading {
+    margin-bottom: 0.8em;
+  }
+}
 .explain__content {
   display: flex;
   flex-direction: column;
   row-gap: 1.5em;
   padding-left: 0.45em;
+}
+@media screen and (min-width: 1224px) {
+  .explain__content {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2em;
+  }
 }
 .explain__item {
   width: 100%;
@@ -319,8 +521,23 @@ button {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .explain__item {
+    padding: 1.5em 0;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .explain__item {
+    padding: 1em 0;
+  }
+}
 .explain__item:nth-child(1) {
   margin-top: 2em;
+}
+@media screen and (min-width: 1224px) {
+  .explain__item:nth-child(1) {
+    margin-top: 0;
+  }
 }
 .explain__item:nth-child(3) {
   background-color: #f2eafb;
@@ -330,13 +547,43 @@ button {
   align-items: center;
   transform: translateX(-5%);
 }
+@media screen and (min-width: 768px) {
+  .explain__line {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .explain__line {
+    font-size: 22px;
+  }
+}
 .explain__line > p {
   font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .explain__line > p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .explain__line > p {
+    font-size: 17px;
+  }
 }
 .explain__line > i {
   text-align: center;
   width: 60px;
   color: #7e7e7e;
+}
+@media screen and (min-width: 768px) {
+  .explain__line > i {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .explain__line > i {
+    width: 90px;
+  }
 }
 .explain__line .primary {
   color: #9356dc;
@@ -355,10 +602,24 @@ button {
 .number > p {
   font-size: 0.8em;
 }
+@media screen and (min-width: 768px) {
+  .number {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 .main {
   padding: 5%;
   background-color: #f6f6f6;
+}
+@media screen and (min-width: 1224px) {
+  .main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 2em;
+  }
 }
 
 .food__section {
@@ -366,6 +627,13 @@ button {
   flex-direction: column;
   row-gap: 1em;
   margin-bottom: 2em;
+}
+@media screen and (min-width: 1224px) {
+  .food__section {
+    width: 32%;
+    row-gap: 1.5em;
+    margin: 2em 0;
+  }
 }
 .food__section > h2 {
   font-size: 18px;
@@ -384,6 +652,11 @@ button {
 }
 .food__container:hover > .food__check {
   width: 20vw;
+}
+@media screen and (min-width: 1224px) {
+  .food__container:hover > .food__check {
+    width: 8vw;
+  }
 }
 .food__container:hover > .food__check > i {
   animation: rotation 500ms linear;
@@ -428,6 +701,11 @@ button {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+@media screen and (min-width: 1224px) {
+  .food__content {
+    font-size: 14px;
+  }
+}
 .food__price {
   font-weight: bold;
   color: #353535;
@@ -465,10 +743,20 @@ button {
   transition: opacity 250ms;
   background: linear-gradient(-10deg, #a16be0, #ff93e1);
 }
+@media screen and (min-width: 768px) {
+  .food__btn {
+    font-size: 18px;
+  }
+}
 .food__order {
   display: flex;
   justify-content: center;
   margin: 2.5em 0;
+}
+@media screen and (min-width: 1224px) {
+  .food__order {
+    margin: 1.5em 0;
+  }
 }
 
 @keyframes fade {
@@ -518,217 +806,6 @@ button {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-  .header__searchbar > input::placeholder {
-    padding-left: 37%;
-    font-size: 18px;
-  }
-  .header__info {
-    padding-left: 2em;
-    padding-right: 2.5em;
-    font-size: 25px;
-    align-items: center;
-  }
-
-  .content {
-    padding: 5%;
-  }
-  .content__heading {
-    font-size: 30px;
-  }
-  .content__sentence {
-    font-size: 16px;
-  }
-  .content__btn {
-    font-size: 18px;
-  }
-
-  .explain {
-    padding: 5%;
-  }
-  .explain__line {
-    font-size: 25px;
-  }
-  .explain__line > i {
-    width: 100px;
-  }
-  .explain__line > p {
-    font-size: 20px;
-  }
-  .explain__item {
-    padding: 1.5em 0;
-  }
-
-  .number {
-    width: 30px;
-    height: 30px;
-  }
-
-  .cardmap {
-    padding: 5%;
-  }
-  .cardmap__item-info {
-    padding: 2% 4%;
-  }
-
-  .card-info {
-    line-height: 2;
-  }
-  .card-info > h3 {
-    font-size: 20px;
-  }
-  .card-info > p {
-    font-size: 18px;
-  }
-
-  .tag {
-    left: 82%;
-    font-size: 20px;
-    width: 100px;
-  }
-
-  .food__btn {
-    font-size: 18px;
-  }
-
-  .footer {
-    flex-flow: row wrap;
-    justify-content: space-around;
-  }
-  .footer__logo {
-    font-size: 25px;
-    flex: 0 1 100%;
-    text-align: center;
-  }
-  .footer__item {
-    column-gap: 50px;
-  }
-
-  .icon {
-    font-size: 35px;
-  }
-}
-/* Desktop devices (1224px and up) */
-@media screen and (min-width: 1224px) {
-  .header__searchbar > input::placeholder {
-    padding-left: 41%;
-  }
-  .header__arrow {
-    flex: 3;
-  }
-  .header__card {
-    height: 25vh;
-  }
-  .header__card-img {
-    background-position: center;
-  }
-  .header__info {
-    padding: 0.5em 3em;
-    width: 33%;
-    transform: translateY(-2em);
-    font-size: 20px;
-  }
-
-  .main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 2em;
-  }
-
-  .food__container:hover > .food__check {
-    width: 8vw;
-  }
-  .food__section {
-    width: 32%;
-    row-gap: 1.5em;
-    margin: 2em 0;
-  }
-  .food__content {
-    font-size: 14px;
-  }
-  .food__order {
-    margin: 1.5em 0;
-  }
-
-  .content {
-    padding: 2%;
-  }
-  .content__btn {
-    font-size: 16px;
-  }
-
-  .explain {
-    padding: 2% 5%;
-  }
-  .explain__heading {
-    margin-bottom: 0.8em;
-  }
-  .explain__content {
-    flex-direction: row;
-    align-items: center;
-    column-gap: 2em;
-  }
-  .explain__item {
-    padding: 1em 0;
-  }
-  .explain__item:nth-child(1) {
-    margin-top: 0;
-  }
-  .explain__line {
-    font-size: 22px;
-  }
-  .explain__line > i {
-    width: 90px;
-  }
-  .explain__line > p {
-    font-size: 17px;
-  }
-
-  .cardmap {
-    padding: 2em 5%;
-  }
-  .cardmap__content {
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 1em 0;
-  }
-  .cardmap__item {
-    width: 23%;
-  }
-  .cardmap__item-info {
-    padding: 3% 6%;
-  }
-  .cardmap__image {
-    height: 20vh;
-  }
-
-  .tag {
-    left: 75%;
-    font-size: 12px;
-    width: 57px;
-    padding: 0.3em;
-  }
-
-  .card-info {
-    line-height: 1.6;
-  }
-  .card-info > h3 {
-    font-size: 15px;
-  }
-  .card-info > p {
-    font-size: 14px;
-  }
-
-  .icon {
-    font-size: 24px;
-  }
-
-  .footer {
-    padding: 1.2em 8em;
   }
 }
 
