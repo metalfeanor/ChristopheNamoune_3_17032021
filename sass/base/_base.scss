@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
   padding: 0;
@@ -17,12 +18,4 @@ a {
 
 p {
   font-size: 0.9rem;
-}
-button {
-  border: none;
-  cursor: pointer;
-  display: inline-flex;
-  text-align: start;
-  border-radius: 1em;
-  overflow: hidden;
 }

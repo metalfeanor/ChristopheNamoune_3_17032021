@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -17,15 +18,6 @@ a {
 
 p {
   font-size: 0.9rem;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-  display: inline-flex;
-  text-align: start;
-  border-radius: 1em;
-  overflow: hidden;
 }
 
 /* LOADER */
@@ -116,29 +108,50 @@ button {
 }
 .header__searchbar {
   width: 100%;
+  position: relative;
 }
 .header__searchbar > input {
   width: 100%;
   height: 50px;
-  padding-left: 5%;
+  padding-left: 38%;
   border: 0;
   display: block;
   background-color: #eaeaea;
 }
-.header__searchbar > input::placeholder {
-  color: #353535;
-  word-spacing: normal;
-  padding-left: 30%;
-}
 @media screen and (min-width: 768px) {
-  .header__searchbar > input::placeholder {
-    padding-left: 37%;
-    font-size: 18px;
+  .header__searchbar > input {
+    padding-left: 41%;
   }
 }
 @media screen and (min-width: 1224px) {
+  .header__searchbar > input {
+    padding-left: 45%;
+  }
+}
+.header__searchbar > input::placeholder {
+  color: #353535;
+  word-spacing: normal;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
   .header__searchbar > input::placeholder {
-    padding-left: 41%;
+    font-size: 18px;
+  }
+}
+.header__searchbar > i {
+  position: absolute;
+  top: 15px;
+  left: 29%;
+}
+@media screen and (min-width: 768px) {
+  .header__searchbar > i {
+    left: 37%;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .header__searchbar > i {
+    left: 42%;
   }
 }
 .header__card {
@@ -649,6 +662,8 @@ button {
   box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.15);
   overflow: hidden;
   background-color: white;
+  cursor: pointer;
+  border-radius: 1em;
 }
 .food__container:hover > .food__check {
   width: 20vw;
